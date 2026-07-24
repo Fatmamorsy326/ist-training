@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing</title>
+    <title>Home - PinkShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#home">PinkShop</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -30,107 +30,145 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav  mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Activities</a>
+                        <a class="nav-link" href="#categories">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
+                        <a class="nav-link" href="#offers">Offers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Favorites</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Settings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex flex-grow-1 ms-lg-4" role="search">
                     <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn searchBtn" type="submit">Search</button>
                 </form>
+                <a href="cart.html" class="btn started-Btn ms-lg-3 mt-2 mt-lg-0">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart 0
+                </a>
             </div>
         </div>
     </nav>
-    <section class="welcome">
+    <section class="welcome" id="home">
         <div class="text-center container ">
-            <h1 class="display-4 fw-bold">Welcome To Your Project</h1>
-            <p class="lead">A simple and clean starting point for your next idea.</p>
-            <button type="button" class="btn started-Btn">
-                Get Started
-            </button>
+            <h1 class="display-4 fw-bold">Find Your Perfect Style</h1>
+            <p class="lead">Discover simple, stylish products at affordable prices.</p>
+            <a href="#products" class="btn started-Btn">
+                Shop Now
+            </a>
         </div>
     </section>
-    <section class="text-center py-4">
-        <h2 class="fw-bold mb-5">Explore</h2>
+    <section class="text-center py-4" id="products">
+        <h2 class="fw-bold mb-5">Featured Products</h2>
         <div class="container text-center">
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5">
-                        <img src="images/image.png" class="card-img-top rounded-top-5" alt="...">
+                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
+                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn started-Btn">Go somewhere</a>
+                            <h5 class="card-title">Pink Handbag</h5>
+                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$35.00</span>
+
+                                <button class="btn started-Btn add-to-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card rounded-5">
-                        <img src="images/image.png" class="rounded-top-5 card-img-top" alt="...">
+                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
+                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn started-Btn">Go somewhere</a>
+                            <h5 class="card-title">Pink Handbag</h5>
+                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$35.00</span>
+
+                                <button class="btn started-Btn add-to-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5">
-                        <img src="images/image.png" class="card-img-top rounded-top-5" alt="...">
+                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
+                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn  started-Btn">Go somewhere</a>
+                            <h5 class="card-title">Pink Handbag</h5>
+                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$35.00</span>
+
+                                <button class="btn started-Btn add-to-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5">
-                        <img src="images/image.png" class="card-img-top rounded-top-5" alt="...">
+                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
+                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn started-Btn">Go somewhere</a>
+                            <h5 class="card-title">Pink Handbag</h5>
+                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$35.00</span>
+
+                                <button class="btn started-Btn add-to-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card rounded-5">
-                        <img src="images/image.png" class="rounded-top-5 card-img-top" alt="...">
+                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
+                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn started-Btn">Go somewhere</a>
+                            <h5 class="card-title">Pink Handbag</h5>
+                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$35.00</span>
+
+                                <button class="btn started-Btn add-to-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5">
-                        <img src="images/image.png" class="card-img-top rounded-top-5" alt="...">
+                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
+                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                            <a href="#" class="btn  started-Btn">Go somewhere</a>
+                            <h5 class="card-title">Pink Handbag</h5>
+                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$35.00</span>
+
+                                <button class="btn started-Btn add-to-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,42 +176,46 @@
         </div>
     </section>
     <section class="text-center py-4">
-        <h2 class="fw-bold mb-5">Our Statistics</h2>
+        <h2 class="fw-bold mb-5">Why Shop With Us?</h2>
         <div class="container text-center">
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card  rounded-4 border-0 custom-card">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold fs-3">120</h5>
+                            <i class="fa-solid fa-truck-fast fs-2 mb-3 feature-icon"></i>
+                            <h5 class="card-title fw-bold fs-3">Fast Delivery</h5>
                             <p class="card-text fs-6 social-link">
-                                Projects</p>
+                                Quick delivery directly to your door.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card  rounded-4 border-0 custom-card">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold fs-3">3,500</h5>
+                            <i class="fa-solid fa-shield-halved fs-2 mb-3 feature-icon"></i>
+                            <h5 class="card-title fw-bold fs-3">Secure Payment</h5>
                             <p class="card-text fs-6 social-link">
-                                Students</p>
+                                Safe and secure payment options.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card  rounded-4 border-0 custom-card">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold fs-3">630</h5>
+                            <i class="fa-solid fa-rotate-left fs-2 mb-3 feature-icon"></i>
+                            <h5 class="card-title fw-bold fs-3">Easy Returns</h5>
                             <p class="card-text fs-6 social-link">
-                                Tasks</p>
+                                Simple and hassle-free return process.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card  rounded-4 border-0 custom-card">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold fs-3">95%</h5>
+                            <i class="fa-solid fa-headset fs-2 mb-3 feature-icon"></i>
+                            <h5 class="card-title fw-bold fs-3">Customer Support</h5>
                             <p class="card-text fs-6 social-link">
-                                Progress</p>
+                                We are ready to help you anytime.</p>
                         </div>
                     </div>
                 </div>
@@ -181,25 +223,27 @@
         </div>
     </section>
 
-    <section>
+    <section id="offers">
         <div class="container my-5">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <img src="images/featured-placeholder.png" alt="featured-placeholder">
+                    <img src="images/featured-placeholder.png" alt="featured-placeholder" class="img-fluid  featured-image">
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="card border-0">
                         <div class="card-body">
-                            <h2 class="fw-bold mb-3">Featured Highlight</h2>
-                            <p class="card-text social-link">This section highlights something important about your project. Replace this paragraph with your own content describing a feature, service, or idea you want to showcase to your visitors.</p>
-                            <a href="#" class="btn started-Btn">Explore more</a>
+                            <h2 class="fw-bold mb-3">Get 20% Off Selected Products
+                            </h2>
+                            <p class="card-text social-link">Discover our selected collection and enjoy special
+                                discounts for a limited time.</p>
+                            <a href="#products" class="btn started-Btn">Shop The Offer</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="pt-4 contact-section">
+    <section class="pt-4 contact-section" id="contact">
         <div class="card border-0 bg-transparent">
             <div class="container contact-section">
                 <div class="card-body row g-4">
@@ -208,7 +252,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Contact</h5>
                                 <p class="card-text social-link ">
-                                    Email: hello@example.com<br>
+                                    Email: support@pinkshop.com<br>
                                     Phone: +00 000 000 000</p>
                             </div>
                         </div>
@@ -232,7 +276,7 @@
                 </div>
             </div>
             <div class="card-footer text-body-secondary text-center">
-                © 2026 Starter Template. Built for learning purposes.
+                © 2026 PinkShop. All rights reserved.
             </div>
         </div>
     </section>
@@ -245,6 +289,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
