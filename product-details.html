@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pink Handbag | PinkShop</title>
 
@@ -15,25 +12,17 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/all.min.css">
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-
-    <!-- Product Details -->
     <main class="product-details-section">
 
         <div class="container">
@@ -44,23 +33,18 @@
 
                     <div class="product-details-image-container">
 
-                        <img
-                            src="images/image.png"
-                            class="product-details-image"
-                            alt="Pink Handbag"
-                        >
-
+                        <img src="images/image.png" class="product-details-image" id="details-image" alt="Pink Handbag">
                     </div>
 
                 </div>
 
                 <div class="col-12 col-md-6">
 
-                    <span class="product-category">
+                    <span class="product-category" id="details-category">
                         Accessories
                     </span>
 
-                    <h1 class="product-details-title mt-2">
+                    <h1 class="product-details-title mt-2" id="details-name">
                         Pink Handbag
                     </h1>
 
@@ -78,14 +62,12 @@
 
                     </div>
 
-                    <p class="product-details-price">
+                    <p class="product-details-price" id="details-price">
                         $35.00
                     </p>
 
-                    <p class="product-description">
+                    <p class="product-description" id="details-description">
                         A stylish pink handbag suitable for everyday use.
-                        It has a simple design, comfortable handles and enough
-                        space for your daily essentials.
                     </p>
 
                     <hr>
@@ -103,10 +85,9 @@
 
                     </div>
 
-                    <button
-                        type="button"
-                        class="btn started-Btn px-4 py-2"
-                    >
+                    <button type="button" class="btn started-Btn px-4 py-2" id="product-details-add-button" data-id="1"
+                        data-name="Pink Handbag" data-price="35" data-category="Accessories"
+                        data-image="images/image.png">
                         <i class="fa-solid fa-cart-plus me-1"></i>
                         Add To Cart
                     </button>
@@ -129,9 +110,10 @@
 
     <script src="js/all.min.js"></script>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
+    <script src="js/main.js"></script>
 
 </body>
 

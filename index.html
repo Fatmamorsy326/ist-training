@@ -46,13 +46,18 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex flex-grow-1 ms-lg-4" role="search">
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn searchBtn" type="submit">Search</button>
+                <form class="d-flex flex-grow-1 ms-lg-4" role="search" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search"
+                        id="search-input">
+
+                    <button class="btn searchBtn" type="submit">
+                        Search
+                    </button>
                 </form>
                 <a href="cart.html" class="btn started-Btn ms-lg-3 mt-2 mt-lg-0">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    Cart 0
+                    Cart
+                    <span id="cart-count">0</span>
                 </a>
             </div>
         </div>
@@ -71,15 +76,21 @@
         <div class="container text-center">
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
-                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
+                    <div class="card rounded-5 clickable-card product-card" data-id="1" data-name="Pink Handbag"
+                        data-price="35" data-category="Accessories" data-image="images/pink_handbag.jfif" data-description="A stylish pink handbag suitable for everyday use. It features comfortable handles, a spacious interior, and a modern design perfect for work, shopping, or casual outings.">
+                        <img src="images/pink_handbag.jfif" class="card-img-top rounded-top-5 product-image" alt="Pink Handbag">
+
                         <div class="card-body">
                             <h5 class="card-title">Pink Handbag</h5>
-                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
+
+                            <p class="card-text">
+                                A stylish handbag suitable for everyday use.
+                            </p>
+
                             <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="product-price">$35.00</span>
 
-                                <button class="btn started-Btn add-to-cart">
+                                <button type="button" class="btn started-Btn add-to-cart">
                                     <i class="fa-solid fa-cart-plus"></i>
                                     Add
                                 </button>
@@ -88,15 +99,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
-                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pink Handbag</h5>
-                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <span class="product-price">$35.00</span>
+                    <div class="card rounded-5 clickable-card product-card" data-id="2" data-name="White Sneakers"
+                        data-price="60" data-category="Shoes" data-image="images/white_sneakers.jfif" data-description="Comfortable white sneakers designed for everyday wear. They provide excellent cushioning, a lightweight feel, and a clean minimalist style that matches any outfit.">
 
-                                <button class="btn started-Btn add-to-cart">
+                        <img src="images/white_sneakers.jfif" class="card-img-top rounded-top-5 product-image"
+                            alt="White Sneakers">
+
+                        <div class="card-body">
+                            <h5 class="card-title">White Sneakers</h5>
+
+                            <p class="card-text">
+                                Comfortable sneakers perfect for daily wear.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$60.00</span>
+
+                                <button type="button" class="btn started-Btn add-to-cart">
                                     <i class="fa-solid fa-cart-plus"></i>
                                     Add
                                 </button>
@@ -105,15 +124,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
-                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pink Handbag</h5>
-                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <span class="product-price">$35.00</span>
+                    <div class="card rounded-5 clickable-card product-card" data-id="3" data-name="Rose Gold Watch"
+                        data-price="120" data-category="Watches" data-image="images/pink_watch.jpg" data-description="An elegant rose gold watch with a modern finish. It combines timeless style with reliable performance, making it suitable for both casual and formal occasions.">
 
-                                <button class="btn started-Btn add-to-cart">
+                        <img src="images/pink_watch.jpg" class="card-img-top rounded-top-5 product-image"
+                            alt="Rose Gold Watch">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Rose Gold Watch</h5>
+
+                            <p class="card-text">
+                                Elegant watch with a modern rose gold finish.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$120.00</span>
+
+                                <button type="button" class="btn started-Btn add-to-cart">
                                     <i class="fa-solid fa-cart-plus"></i>
                                     Add
                                 </button>
@@ -122,15 +149,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
-                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pink Handbag</h5>
-                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <span class="product-price">$35.00</span>
+                    <div class="card rounded-5 clickable-card product-card" data-id="4" data-name="Black Sunglasses"
+                        data-price="25" data-category="Accessories" data-image="images/sunglasses.jfif" data-description="Stylish black sunglasses with UV protection and a lightweight frame. Perfect for sunny days while adding a fashionable touch to your everyday look.">
 
-                                <button class="btn started-Btn add-to-cart">
+                        <img src="images/sunglasses.jfif" class="card-img-top rounded-top-5 product-image" 
+                            alt="Black Sunglasses">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Black Sunglasses</h5>
+
+                            <p class="card-text">
+                                Stylish sunglasses with full UV protection.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$25.00</span>
+
+                                <button type="button" class="btn started-Btn add-to-cart">
                                     <i class="fa-solid fa-cart-plus"></i>
                                     Add
                                 </button>
@@ -139,15 +174,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
-                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pink Handbag</h5>
-                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <span class="product-price">$35.00</span>
+                    <div class="card rounded-5 clickable-card product-card" data-id="5" data-name="Leather Wallet"
+                        data-price="40" data-category="Wallets" data-image="images/wallet.jfif" data-description="A premium leather wallet with multiple card slots and a spacious cash compartment. Durable, compact, and designed to keep your essentials organized.">
 
-                                <button class="btn started-Btn add-to-cart">
+                        <img src="images/wallet.jfif" class="card-img-top rounded-top-5 product-image"
+                            alt="Leather Wallet">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Leather Wallet</h5>
+
+                            <p class="card-text">
+                                Premium leather wallet with multiple card slots.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$40.00</span>
+
+                                <button type="button" class="btn started-Btn add-to-cart">
                                     <i class="fa-solid fa-cart-plus"></i>
                                     Add
                                 </button>
@@ -156,15 +199,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card  rounded-5 clickable-card" onclick="window.location.href='product-details.html'">
-                        <img src="images/image.png" class="card-img-top rounded-top-5 product-image" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pink Handbag</h5>
-                            <p class="card-text">A stylish handbag suitable for everyday use.</p>
-                            <div class="d-flex justify-content-between align-items-center mt-auto">
-                                <span class="product-price">$35.00</span>
+                    <div class="card rounded-5 clickable-card product-card" data-id="6" data-name="Silver Necklace"
+                        data-price="55" data-category="Jewelry" data-image="images/silver_necklace.jfif" data-description="An elegant silver necklace with a minimalist design. Perfect for daily wear or special occasions, adding a subtle touch of sophistication to any outfit.">
 
-                                <button class="btn started-Btn add-to-cart">
+                        <img src="images/silver_necklace.jfif" class="card-img-top rounded-top-5 product-image"
+                            alt="Silver Necklace">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Silver Necklace</h5>
+
+                            <p class="card-text">
+                                Elegant silver necklace for everyday style.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <span class="product-price">$55.00</span>
+
+                                <button type="button" class="btn started-Btn add-to-cart">
                                     <i class="fa-solid fa-cart-plus"></i>
                                     Add
                                 </button>
@@ -172,6 +223,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -227,7 +279,8 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <img src="images/featured-placeholder.png" alt="featured-placeholder" class="img-fluid  featured-image">
+                    <img src="images/offer.jfif" alt="featured-placeholder"
+                        class="img-fluid  featured-image">
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center">
                     <div class="card border-0">
