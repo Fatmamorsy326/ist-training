@@ -39,7 +39,10 @@ function addProductToCart(product) {
     saveCart();
     updateCartCount();
 
-    alert(`${product.name} has been added to your cart.`);
+    // alert(`${product.name} has been added to your cart.`);
+
+   Swal.fire({ icon: 'success', title: 'Added to Cart!', text: `${product.name} has been added to your cart.`, timer: 1500, showConfirmButton: false });
+
 }
 function getProductDataFromCard(card) {
     return {
